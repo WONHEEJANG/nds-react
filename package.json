@@ -1,0 +1,60 @@
+{
+  "name": "nds-react-components",
+  "version": "1.0.0",
+  "description": "Nonghyup Design System (NDS) React Components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "preview": "start preview.html",
+    "serve": "npx serve .",
+    "react-dev": "npx vite",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint components/**/*.{ts,tsx}",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "design-system",
+    "components",
+    "nonghyup",
+    "nds"
+  ],
+  "author": "Nonghyup Bank",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-controls": "^8.6.14",
+    "@storybook/addon-docs": "^8.6.14",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "serve": "^14.0.0",
+    "storybook": "^8.6.14",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0"
+  },
+  "files": [
+    "dist",
+    "components",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

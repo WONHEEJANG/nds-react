@@ -1,0 +1,1 @@
+export { Tab, type TabProps, type TabItem } from './Tab';
