@@ -6,7 +6,8 @@
       "Bash(npx storybook:*)",
       "Bash(npm install:*)",
       "Bash(copy \"public\\content\\assets\\css\\common-ui.css\" \".storybook\\nds.css\")",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }

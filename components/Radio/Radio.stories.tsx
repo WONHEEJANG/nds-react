@@ -57,8 +57,8 @@ const meta: Meta<typeof Radio> = {
     label: 'Radio Label',
     name: 'radio-group',
     value: 'option1',
-    size: 'md',
-    state: 'false',
+    size: 'lg',
+    state: 'default',
     checked: false,
     disabled: false,
     required: false,
@@ -124,9 +124,7 @@ export const Sizes: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
       <Radio label="Large (lg)" name="sizes" value="lg" size="lg" />
-      <Radio label="Medium (md)" name="sizes" value="md" size="md" />
       <Radio label="Small (sm)" name="sizes" value="sm" size="sm" />
-      <Radio label="Extra Small (xs)" name="sizes" value="xs" size="xs" />
     </div>
   ),
   parameters: {
@@ -142,8 +140,8 @@ export const Sizes: Story = {
 export const States: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-      <Radio label="기본 상태" name="states" value="default" state="false" />
-      <Radio label="선택된 상태" name="states" value="selected" state="true" />
+      <Radio label="기본 상태" name="states" value="default" state="default" />
+      <Radio label="선택된 상태" name="states" value="selected" state="selected" />
       <Radio label="비활성화 상태" name="states" value="disabled" state="disabled" />
     </div>
   ),

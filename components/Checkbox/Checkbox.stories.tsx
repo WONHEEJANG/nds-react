@@ -47,8 +47,8 @@ const meta: Meta<typeof Checkbox> = {
   },
   args: {
     label: 'Checkbox Label',
-    size: 'md',
-    state: 'false',
+    size: 'sm',
+    state: 'default',
     checked: false,
     disabled: false,
     required: false,
@@ -112,7 +112,7 @@ export const Sizes: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
       <Checkbox label="Large (lg)" size="lg" />
-      <Checkbox label="Medium (md)" size="md" />
+      <Checkbox label="Small (sm)" size="sm" />
       <Checkbox label="Small (sm)" size="sm" />
       <Checkbox label="Extra Small (xs)" size="xs" />
     </div>
@@ -130,9 +130,9 @@ export const Sizes: Story = {
 export const States: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-      <Checkbox label="기본 상태" state="false" />
-      <Checkbox label="선택된 상태" state="true" />
-      <Checkbox label="중간 상태" state="indeterminate" />
+      <Checkbox label="기본 상태" state="default" />
+      <Checkbox label="선택된 상태" state="selected" />
+      <Checkbox label="중간 상태" state="selected" />
       <Checkbox label="비활성화 상태" state="disabled" />
     </div>
   ),

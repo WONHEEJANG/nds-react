@@ -34,7 +34,7 @@ const meta: Meta<typeof Icon> = {
   },
   args: {
     name: 'home',
-    size: '24',
+    size: 24,
     color: '#333333',
   },
 };

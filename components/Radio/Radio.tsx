@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 
-export interface RadioProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface RadioProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: string;
   size?: 'sm' | 'lg';
   variant?: 'basic' | 'box' | 'survey';

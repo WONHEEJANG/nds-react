@@ -31,10 +31,6 @@ const meta: Meta<typeof Select> = {
       control: 'boolean',
       description: '비활성화 상태',
     },
-    required: {
-      control: 'boolean',
-      description: '필수 선택 여부',
-    },
     error: {
       control: 'boolean',
       description: '에러 상태',
@@ -53,7 +49,6 @@ const meta: Meta<typeof Select> = {
     placeholder: '옵션을 선택하세요',
     variant: 'default',
     disabled: false,
-    required: false,
     error: false,
     options: [
       { value: 'option1', label: '옵션 1' },

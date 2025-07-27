@@ -300,21 +300,21 @@ export const ComponentShowcase: React.FC = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div>
                   <p>콘텐츠 1</p>
-                  <Divider type="content-8px" />
+                  <Divider type="content-8" />
                   <p>콘텐츠 2 (8px 간격)</p>
                 </div>
                 
                 <div>
                   <p>리스트 아이템 1</p>
-                  <Divider type="list1-1px" />
+                  <Divider type="list-1" />
                   <p>리스트 아이템 2</p>
-                  <Divider type="list2-1px" />
+                  <Divider type="list-1" />
                   <p>리스트 아이템 3 (1px 구분선)</p>
                 </div>
 
                 <div>
                   <p>페이지 섹션 1</p>
-                  <Divider type="page-1px" />
+                  <Divider type="page-1" />
                   <p>페이지 섹션 2 (페이지 구분선)</p>
                 </div>
               </div>

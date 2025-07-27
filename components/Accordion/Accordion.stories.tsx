@@ -36,29 +36,20 @@ const meta: Meta<typeof Accordion> = {
       options: ['list', 'content'],
       description: '아코디언 타입',
     },
-    isOpen: {
+    defaultOpen: {
       control: 'boolean',
-      description: '열림/닫힘 상태',
-    },
-    disabled: {
-      control: 'boolean',
-      description: '비활성화 상태',
+      description: '기본 열림/닫힘 상태',
     },
     children: {
       control: 'text',
       description: '아코디언 내용',
-    },
-    onToggle: {
-      action: 'toggled',
-      description: '열림/닫힘 토글 시 호출되는 함수',
     },
   },
   args: {
     title: 'Accordion Title',
     variant: 'box',
     type: 'list',
-    isOpen: false,
-    disabled: false,
+    defaultOpen: false,
     children: '아코디언 내용입니다.',
   },
 };
@@ -181,7 +172,7 @@ export const Variants: Story = {
       <Accordion
         title="박스 + 콘텐츠 타입"
         variant="box"
-        type="content"
+        type="text"
       >
         <div style={{ padding: '16px' }}>박스 스타일, 콘텐츠 타입</div>
       </Accordion>
@@ -197,7 +188,7 @@ export const Variants: Story = {
       <Accordion
         title="라인 + 콘텐츠 타입"
         variant="line"
-        type="content"
+        type="text"
       >
         <div style={{ padding: '16px' }}>라인 스타일, 콘텐츠 타입</div>
       </Accordion>
@@ -221,7 +212,7 @@ export const FAQ: Story = {
       <Accordion
         title="계좌 개설은 어떻게 하나요?"
         variant="line"
-        type="content"
+        type="text"
       >
         <div style={{ padding: '16px' }}>
           <p>온라인 또는 영업점 방문을 통해 계좌를 개설할 수 있습니다.</p>
@@ -236,7 +227,7 @@ export const FAQ: Story = {
       <Accordion
         title="인터넷뱅킹 비밀번호를 잊어버렸어요"
         variant="line"
-        type="content"
+        type="text"
       >
         <div style={{ padding: '16px' }}>
           <p>고객센터(1588-2100) 또는 영업점 방문을 통해 재설정이 가능합니다.</p>
@@ -247,7 +238,7 @@ export const FAQ: Story = {
       <Accordion
         title="수수료는 언제 부과되나요?"
         variant="line"
-        type="content"
+        type="text"
       >
         <div style={{ padding: '16px' }}>
           <p>거래 유형에 따라 수수료가 부과됩니다:</p>

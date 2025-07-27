@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 
-export interface SwitchProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface SwitchProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: string;
   size?: 'lg' | 'md' | 'sm';
   state?: 'true' | 'false' | 'disabled';
