@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './textarea.css';
 
 export interface TextAreaProps {
   /** 텍스트에어리어 라벨 */

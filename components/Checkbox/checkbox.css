@@ -1,0 +1,81 @@
+/* Checkbox Component Styles */
+/* Extracted from common-ui.css */
+@import '../../src/styles/variables.css';
+
+/* 체크박스 (기본,sm 통합) */
+.checkbox {display:flex; position:relative;}
+.checkbox.-textless {width:2.8rem;height:2.8rem;}
+.checkbox.-textless.-sm {width:2.4rem;height:2.4rem;}
+
+.checkbox input {position:absolute; width:2.4rem; height:2.4rem; top:0; left:0; border-radius:1rem; background-color:rgba(0,0,0,0); visibility: hidden; z-index: -1;}
+.checkbox label {min-height:2.4rem; display:inline-flex; flex:1; position:relative; padding-left:3.8rem; color:var(--color-text-checkbox-basic-default); font-size:1.6rem; word-break:break-all; cursor:pointer; letter-spacing: -.02rem; line-height: 1.5;}
+
+.checkbox label:before,
+.checkbox.-sm > label:before {content:""; position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; border:1px solid var(--border-checkbox); border-radius:.8rem; background-color: transparent;}
+.checkbox label:after,
+.checkbox.-sm > label:after {content:"";  position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; border-radius:.8rem; background:url(../src/imgs/ico/common/ico-checkbox-sm.png) no-repeat 0 / 2.4rem;}
+
+.dark-mode .checkbox label:after,
+.dark-mode .checkbox.-sm > label:after {content:"";  position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; border-radius:.8rem; background:url(../src/imgs/ico/common/ico-checkbox-sm_dk.png) no-repeat 0 / 2.4rem;}
+
+.checkbox input,
+.checkbox.-sm > input {position:absolute; width:2.4rem; height:2.4rem; top:.1rem; left:0; border-radius:1rem; background-color:rgba(0,0,0,0); visibility: hidden; z-index: -1;}
+.checkbox label,
+.checkbox.-sm > label {min-height:2.4rem; padding:0 0 0 3.2rem; font-size:1.5rem; line-height:1.6}
+
+.checkbox > input:checked ~ label:after,
+.checkbox.-sm > input:checked ~ label:after {background-image:url(../src/imgs/ico/common/ico-checkbox-sm-checked.png);}
+.dark-mode .checkbox > input:checked ~ label:after {background-image:url(../src/imgs/ico/common/ico-checkbox-sm-checked.png);}
+
+.checkbox.-sm > input:checked:focus ~ label:after {-webkit-animation:checkbox-sm .3s ease-out; animation:checkbox-sm .3s ease-out;}
+.checkbox input:checked ~ label:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked); transition:border .3s, background .3s;}
+.checkbox input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+/* 체크박스 lg */
+.checkbox.-lg input {position:absolute; width:2.8rem; height:2.8rem; top:0; left:0; border-radius:1rem; background-color:rgba(0,0,0,0); visibility: hidden; z-index: -1;}
+.checkbox.-lg label {min-height:2.8rem; display:inline-flex; flex:1; position:relative; padding-left:3.8rem; color:var(--color-checkbox); font-size:1.6rem; word-break:break-all; cursor:pointer; letter-spacing: -.02rem; line-height: 1.5;}
+
+.checkbox.-lg label:after {content:"";  position:absolute; top:0; left:0; width:2.8rem; height:2.8rem; border-radius:1rem; background:url(../src/imgs/nds/common/ico_check_box_28_default.png) no-repeat 0 / 2.8rem;}
+.checkbox.-lg input:checked ~ label:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked); transition:border .3s, background .3s;}
+.checkbox.-lg input:checked ~ label:after {background-image:url(../src/imgs/nds/common/ico_check_box_28_selected.png);}
+.checkbox.-lg input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/ico_check_box_28_disabled.png);}
+.checkbox.-lg.-seldis input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/ico_check_box_28_selectdisabled.png);}
+.checkbox.-lg input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+/* 체크박스 sm */
+.checkbox.-sm input {position:absolute; width:2.4rem; height:2.4rem; top:0; left:0; border-radius: var(--spacing-8); background-color:rgba(0,0,0,0); visibility: hidden; z-index: -1;}
+.checkbox.-sm label:after {content:"";  position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/check_sm_default.png) no-repeat 50% / 1.6rem; border-radius: var(--spacing-8); border: .1rem solid var(--color-border-checkbox-basic-default);}
+.dark-mode .checkbox.-sm label:after {background:url(../src/imgs/nds/common/check_sm_default_dk.png) no-repeat 50% / 1.6rem;}
+.checkbox.-sm input:checked ~ label:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked); transition:border .3s, background .3s;}
+.checkbox.-sm input:checked ~ label:after {background:url(../src/imgs/nds/common/check_sm_cheked.png) no-repeat 50% / 1.6rem; background-color: var(--color-bg-checkbox-basic-selected); border: none;}
+.dark-mode .checkbox.-sm input:checked ~ label:after {background:url(../src/imgs/nds/common/check_sm_cheked_dk.png) no-repeat 50% / 1.6rem; background-color: var(--color-bg-checkbox-basic-selected); border: none;}
+.checkbox.-sm input[disabled] ~ label:after {background-image: url(../src/imgs/nds/common/check_sm_disabled.png); border: .1rem solid var(--color-border-checkbox-basic-disabled); background-color: var(--color-bg-checkbox-basic-disabled);}
+.dark-mode .checkbox.-sm input[disabled] ~ label:after {background-image: url(../src/imgs/nds/common/check_sm_disabled_dk.png);}
+.checkbox.-sm.-seldis input[disabled] ~ label:after {background-image: url(../src/imgs/nds/common/check_sm_select-disabled.png); border-radius: var(--border-radius-8); background-color: var(--color-bg-checkbox-basic-select-disabled);}
+.dark-mode .checkbox.-sm.-seldis input[disabled] ~ label:after {background-image: url(../src/imgs/nds/common/check_sm_select-disabled_dk.png);}
+.checkbox.-sm input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+/* 체크박스 xs */
+.checkbox.-xs input {position:absolute; width:2.4rem; height:2.4rem; top:0; left:0; border-radius:1rem; background-color:rgba(0,0,0,0); visibility: hidden; z-index: -1;}
+.checkbox.-xs label:after {content:"";  position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/check_xs_default.png) no-repeat 0 / 2.4rem;}
+.dark-mode .checkbox.-xs label:after {background:url(../src/imgs/nds/common/check_xs_default_dk.png) no-repeat 0 / 2.4rem;}
+.checkbox.-xs input:checked ~ label:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked); transition:border .3s, background .3s;}
+.checkbox.-xs input:checked ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_checked.png);}
+.dark-mode .checkbox.-xs input:checked ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_checked_dk.png);}
+.checkbox.-xs input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_disabled.png);}
+.dark-mode .checkbox.-xs input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_disabled_dk.png);}
+.checkbox.-xs.-seldis input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_select-disabled.png);}
+.dark-mode .checkbox.-xs.-seldis input[disabled] ~ label:after {background-image:url(../src/imgs/nds/common/check_xs_select-disabled_dk.png);}
+.checkbox.-xs input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+/* 비활성화 상태 */
+.checkbox input[disabled] ~ label {color:var(--color-text-checkbox-basic-disabled);}
+.checkbox.-seldis input[disabled] ~ label {color:var(--color-text-checkbox-basic-default);}
+.checkbox input[disabled] ~ label:before {border-color: var(--border-checkbox-disabled); background-color:var(--bg-checkbox-disabled);}
+.dark-mode .checkbox input[disabled] ~ label:before {background-color:var(--bg-checkbox-disabled); border-color:var(--border-checkbox-disabled);}
+.checkbox input[disabled]:checked ~ label:before {border-color:var(--border-checkbox-checked-disabled); background-color:var(--bg-checkbox-checked-disabled);}
+.dark-mode .checkbox input[disabled]:checked ~ label:before {border-color:var(--border-checkbox-checked-disabled); background-color:var(--bg-checkbox-checked-disabled);}
+.dark-mode .checkbox > input[disabled]:checked ~ label:after {background-image:url(../src/imgs/ico/common/ico-checkbox-disable-sm_dk.png);}
+
+/* 체크박스 그룹 */
+.checkboxes {display:flex; flex-wrap:wrap;} 

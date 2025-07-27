@@ -1,4 +1,5 @@
 import React from 'react';
+import './table.css';
 
 export type TableAlign = 'left' | 'center' | 'right';
 export type TableSize = 'sm' | 'md' | 'lg';

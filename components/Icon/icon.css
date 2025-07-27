@@ -1,0 +1,32 @@
+/* Icon Component Styles */
+/* Extracted from common-ui.css */
+
+/* 주석 수정됨 */
+.icon {display:inline-block; width:2.4rem; height:2.4rem; background-size:contain; background-repeat:no-repeat; background-position:center;}
+
+/* 주석 수정됨 */
+.icon.-xs {width:1.6rem; height:1.6rem;}
+.icon.-sm {width:2rem; height:2rem;}
+.icon.-md {width:2.4rem; height:2.4rem;}
+.icon.-lg {width:3.2rem; height:3.2rem;}
+.icon.-xl {width:4rem; height:4rem;}
+
+/* 주석 수정됨 */
+.icon.-fill {background-size:contain;}
+.icon.-line {background-size:contain;}
+
+/* 주석 수정됨 */
+.icon.-primary {filter:brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
+.icon.-secondary {filter:brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);}
+.icon.-success {filter:brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
+.icon.-warning {filter:brightness(0) saturate(100%) invert(84%) sepia(31%) saturate(638%) hue-rotate(359deg) brightness(103%) contrast(107%);}
+.icon.-error {filter:brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);}
+
+/* 주석 수정됨 */
+.icon.-disabled {opacity:0.5; filter:grayscale(100%);}
+.icon.-active {filter:brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
+
+/* 주석 수정됨 */
+.dark-mode .icon {filter:invert(1);}
+.dark-mode .icon.-primary {filter:brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%) invert(1);}
+.dark-mode .icon.-secondary {filter:brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) invert(1);} 

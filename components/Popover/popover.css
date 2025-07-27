@@ -1,0 +1,99 @@
+/* Popover Component Styles */
+/* Extracted from common-ui.css */
+
+/* 주석 수정됨 */
+.popover {display: flex;align-items: center;border-radius: var(--border-radius-10);background-color: var(--color-bg-popover-default); color: var(--color-text-popover-default); min-height: 3.8rem;position: absolute;z-index: 1000;padding: var(--spacing-8) var(--spacing-12);font-size: 1.4rem;line-height: 1.4;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);}
+
+.popover .popover-close{width:1.6rem;height:1.6rem;background:url('../imgs/nds/common/ico_delete_gray50_line_16.png') no-repeat center;background-size: cover;margin-left:0.4rem;border: none;cursor: pointer;}
+
+.popover::after {display: block;content: '';background: url(../src/imgs/nds/common/Edge.png) no-repeat center center / 1rem .7rem;position: absolute;top: -.7rem;width: 1rem;height: .7rem;left: 2.2rem;z-index: 10;}
+
+/* 주석 수정됨 */
+.popover.-bc::after{transform:rotate(180deg);top:auto;bottom:-0.6rem;left:50%;margin-left:-0.5rem ;}
+
+.popover.-bl::after{transform:rotate(180deg);top:auto;bottom:-0.6rem;left:2.2rem;right:auto}
+
+.popover.-br::after{transform:rotate(180deg);top:auto;bottom:-0.6rem;left:auto;right:2.2rem}
+
+.popover.-tc::after{top:-0.6rem;bottom:auto;left:50%;margin-left:-0.5rem ;}
+
+.popover.-tl::after{top:-0.6rem;bottom:auto;left:2.2rem;right:auto}
+
+.popover.-tr::after{top:-0.6rem;bottom:auto;left:auto;right:2.2rem}
+
+/* 주석 수정됨 */
+.dark-mode .popover::after {display: block;content: '';background: url(../src/imgs/nds/common/Edge_dk.png) no-repeat center center / 1.1rem .6rem;position: absolute;width: 1.1rem;height: .6rem;z-index: 10;}
+
+.dark-mode .popover .popover-close{background-image:url('../imgs/nds/common/ico_delete_gray50_line_16_dk.png');}
+
+.popover.hidden {display: none;}
+
+/* 주석 수정됨 */
+.popover-close {display: inline-flex;align-items: center;justify-content: center;width: 1.6rem;height: 1.6rem;border: none;background: none;cursor: pointer;padding: 0;border-radius: var(--border-radius-4);transition: background-color 0.2s ease;}
+
+.popover-close:hover {background-color: var(--color-bg-hover);}
+
+.popover-close:active {background-color: var(--color-bg-active);}
+
+/* 주석 수정됨 */
+.popover-content {flex: 1;word-break: break-word;}
+
+/* 주석 수정됨 */
+.popover {transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out;}
+
+.popover[style*="opacity: 0"] {transform: scale(0.95);}
+
+.popover[style*="opacity: 1"] {transform: scale(1);}
+
+/* 주석 수정됨 */
+.popover.-bc {margin-top: 0.8rem;}
+
+.popover.-bl {margin-top: 0.8rem;}
+
+.popover.-br {margin-top: 0.8rem;}
+
+.popover.-tc {margin-bottom: 0.8rem;}
+
+.popover.-tl {margin-bottom: 0.8rem;}
+
+.popover.-tr {margin-bottom: 0.8rem;}
+
+/* 주석 수정됨 */
+.popover.-sm {min-height: 3.2rem;padding: var(--spacing-6) var(--spacing-10);font-size: 1.3rem;}
+
+.popover.-lg {min-height: 4.4rem;padding: var(--spacing-10) var(--spacing-16);font-size: 1.5rem;}
+
+/* 주석 수정됨 */
+.popover.-success {background-color: var(--color-bg-popover-success);color: var(--color-text-popover-success);}
+
+.popover.-warning {background-color: var(--color-bg-popover-warning);color: var(--color-text-popover-warning);}
+
+.popover.-error {background-color: var(--color-bg-popover-error);color: var(--color-text-popover-error);}
+
+.popover.-info {background-color: var(--color-bg-popover-info);color: var(--color-text-popover-info);}
+
+/* 주석 수정됨 */
+@media (max-width: 768px) {
+  .popover {min-height: 3.4rem;padding: var(--spacing-6) var(--spacing-10);font-size: 1.3rem;}
+  
+  .popover.-sm {min-height: 3rem;padding: var(--spacing-4) var(--spacing-8);font-size: 1.2rem;}
+  
+  .popover.-lg {min-height: 4rem;padding: var(--spacing-8) var(--spacing-14);font-size: 1.4rem;}
+  
+  .popover::after {width: 0.8rem;height: 0.6rem;background-size: 0.8rem 0.6rem;}
+  
+  .popover.-bc::after {bottom: -0.5rem;}
+  
+  .popover.-bl::after {bottom: -0.5rem;left: 1.8rem;}
+  
+  .popover.-br::after {bottom: -0.5rem;right: 1.8rem;}
+  
+  .popover.-tc::after {top: -0.5rem;}
+  
+  .popover.-tl::after {top: -0.5rem;left: 1.8rem;}
+  
+  .popover.-tr::after {top: -0.5rem;right: 1.8rem;}
+}
+
+/* 주석 수정됨 */
+.hide {overflow:hidden !important; position:absolute !important; width:1px !important; height:1px !important; margin:0 !important; padding:0 !important; border:0 !important; white-space:nowrap !important; clip:rect(1px, 1px, 1px, 1px) !important; clip-path:inset(50%) !important;} 

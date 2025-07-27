@@ -1,4 +1,5 @@
 import React from 'react';
+import './filter.css';
 
 export interface FilterChip {
   id: string;

@@ -1,4 +1,5 @@
 import React from 'react';
+import './navigation.css';
 
 export type NavigationType = 'top' | 'bottom' | 'tab';
 export type TopNavVariant = 'basic' | 'main' | 'process' | 'full-popup' | 'login';

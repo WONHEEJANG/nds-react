@@ -1,4 +1,5 @@
 import React from 'react';
+import './statusbar.css';
 
 export type StatusbarPlatform = 'aos' | 'ios';
 export type StatusbarMode = 'light' | 'dark';

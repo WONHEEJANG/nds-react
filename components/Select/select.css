@@ -1,0 +1,76 @@
+/* Select Component Styles */
+/* Extracted from common-ui.css */
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select {position:relative; width:100%;}
+
+.select > .button-type {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; width:100%; min-height:5.4rem; padding: var(--spacing-24) var(--spacing-20) var(--spacing-24) var(--spacing-20); border:1px solid var(--color-border-select-default); border-radius: var(--border-radius-12); background-color:var(--color-bg-select-default); color:var(--color-text-select-default); font-size:1.6rem; font-weight:400; text-align:left; cursor:pointer; transition:border-color .3s, background-color .3s;}
+
+.select > .button-type:focus {border-color:var(--color-border-select-focus); background-color:var(--color-bg-select-focus); outline:none;}
+
+.select > .button-type:disabled {border-color:var(--color-border-select-disabled); background-color:var(--color-bg-select-disabled); color:var(--color-text-select-disabled); cursor:not-allowed;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select > .button-type::after {content:""; position:absolute; top:50%; right:var(--spacing-16); width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/arr_down1_line_24.png) no-repeat center / 2.4rem; transform:translateY(-50%); transition:transform .3s;}
+
+.select.-open > .button-type::after {transform:translateY(-50%) rotate(180deg);}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-dropdown {position:absolute; top:100%; left:0; right:0; z-index:1000; margin-top:var(--spacing-4); border:1px solid var(--color-border-select-dropdown); border-radius:var(--border-radius-12); background-color:var(--color-bg-select-dropdown); box-shadow:0 0.4rem 1.2rem rgba(0,0,0,0.1); max-height:20rem; overflow-y:auto;}
+
+.select-option {display:block; width:100%; padding:var(--spacing-12) var(--spacing-16); border:none; background:none; color:var(--color-text-select-option-default); font-size:1.6rem; font-weight:400; text-align:left; cursor:pointer; transition:background-color .3s;}
+
+.select-option:hover {background-color:var(--color-bg-select-option-hover); color:var(--color-text-select-option-hover);}
+
+.select-option.-selected {background-color:var(--color-bg-select-option-selected); color:var(--color-text-select-option-selected);}
+
+.select-option.-disabled {color:var(--color-text-select-option-disabled); cursor:not-allowed;}
+
+.select-option.-disabled:hover {background-color:transparent;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select.-sm > .button-type {min-height:4.8rem; padding:var(--spacing-16) var(--spacing-12); font-size:1.4rem;}
+
+.select.-lg > .button-type {min-height:6rem; padding:var(--spacing-32) var(--spacing-24); font-size:1.8rem;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select.-error > .button-type {border-color:var(--color-border-select-error); background-color:var(--color-bg-select-error);}
+
+.select.-success > .button-type {border-color:var(--color-border-select-success); background-color:var(--color-bg-select-success);}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-placeholder {color:var(--color-text-select-placeholder);}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-value {color:var(--color-text-select-value);}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-group {display:flex; gap:var(--spacing-8);}
+
+.select-group .select {flex:1;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-search {padding:var(--spacing-12) var(--spacing-16); border-bottom:1px solid var(--color-border-select-search);}
+
+.select-search input {width:100%; padding:var(--spacing-8) var(--spacing-12); border:1px solid var(--color-border-select-search-input); border-radius:var(--border-radius-8); background-color:var(--color-bg-select-search-input); color:var(--color-text-select-search-input); font-size:1.4rem;}
+
+.select-search input:focus {border-color:var(--color-border-select-search-input-focus); outline:none;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-header {padding:var(--spacing-12) var(--spacing-16); border-bottom:1px solid var(--color-border-select-header); background-color:var(--color-bg-select-header); color:var(--color-text-select-header); font-size:1.4rem; font-weight:500;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-footer {padding:var(--spacing-12) var(--spacing-16); border-top:1px solid var(--color-border-select-footer); background-color:var(--color-bg-select-footer);}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-loading {display:flex; align-items:center; justify-content:center; padding:var(--spacing-16); color:var(--color-text-select-loading); font-size:1.4rem;}
+
+.select-loading::after {content:""; width:1.6rem; height:1.6rem; margin-left:var(--spacing-8); border:2px solid var(--color-border-select-loading); border-top-color:transparent; border-radius:50%; animation:spin 1s linear infinite;}
+
+@keyframes spin {to {transform:rotate(360deg);}}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.select-empty {padding:var(--spacing-16); text-align:center; color:var(--color-text-select-empty); font-size:1.4rem;}
+
+/* ÁÖ¼® ¼öÁ¤µÊ */
+.dark-mode .select > .button-type::after {background:url(../src/imgs/nds/common/arr_down1_line_24_dk.png) no-repeat center / 2.4rem;} 

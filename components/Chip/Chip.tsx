@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './chip.css';
 
 export interface ChipProps {
   /** 칩에 표시될 텍스트 */
@@ -132,7 +133,7 @@ export const Chip: React.FC<ChipProps> = ({
 
 export interface ChipGroupProps {
   /** 칩 그룹의 타입 */
-  variant?: 'filter' | 'hash' | 'tab';
+  variant?: 'filter' | 'hash' | 'tab' | 'basic';
   /** 아코디언 타입인 경우 열림/닫힘 상태 */
   isOpen?: boolean;
   /** 더보기 버튼 표시 여부 */
@@ -188,7 +189,7 @@ export const ChipGroup: React.FC<ChipGroupProps> = ({
           msOverflowStyle: 'none',
         }}
       >
-        <style jsx>{`
+        <style>{`
           .search-link-wrap::-webkit-scrollbar {
             display: none;
           }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './divider.css';
 
 export type DividerType = 'content-8' | 'list-1' | 'list-2' | 'page-1';
 

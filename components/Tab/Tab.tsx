@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './tab.css';
 
 export interface TabItem {
   id: string;

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './select.css';
 
 export interface SelectOption {
   value: string;

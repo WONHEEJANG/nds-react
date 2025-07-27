@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import './radio.css';
 
 export interface RadioProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: string;

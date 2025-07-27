@@ -1,4 +1,5 @@
 import React from 'react';
+import './indicator.css';
 
 export type IndicatorType = 'dot' | 'number';
 export type IndicatorState = 'play' | 'stop' | 'pause';

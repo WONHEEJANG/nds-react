@@ -1,4 +1,5 @@
 import React from 'react';
+import './process.css';
 
 export type ProcessVariant = 'step' | 'icon' | 'badge' | 'circle';
 export type ProcessDirection = 'horizontal' | 'vertical';

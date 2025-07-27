@@ -1,4 +1,5 @@
 import React from 'react';
+import './image.css';
 
 export type ImageSize = 24 | 28 | 32 | 40 | 56 | 68 | 80 | 120 | 140 | 150 | 190 | 232;
 export type ImageCategory = 'common' | 'flag';

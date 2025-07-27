@@ -1,4 +1,5 @@
 import React from 'react';
+import './infobox.css';
 
 export type InfoboxSize = 'default' | 'sm' | 'xs';
 

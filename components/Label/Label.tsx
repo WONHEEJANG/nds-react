@@ -1,4 +1,5 @@
 import React from 'react';
+import './label.css';
 
 export type LabelType = 'form' | 'badge';
 export type LabelVariant = 'default' | 'multi';

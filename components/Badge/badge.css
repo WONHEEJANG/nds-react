@@ -1,0 +1,56 @@
+/* Badge Component Styles */
+/* Extracted from common-ui.css */
+@import '../../src/styles/variables.css';
+
+/* 배지 기본 스타일 */
+.badge {display:inline-block; padding: .3rem var(--spacing-8) var(--spacing-2) var(--spacing-8); border-radius: var(--border-radius-4); background-color: transparent; color:#646873; font-size:1rem; font-weight: 400; border:1px solid transparent; line-height: 1.367; min-height: 2rem;}
+
+/* 배지 컨테이너 */
+.badges {display:flex;}
+.badges.-left {justify-content:flex-start;}
+.badges.-center {justify-content:center;}
+.badges.-right {justify-content:flex-end;}
+.badges .badge + .badge,
+.badge + .badge {margin-left:.4rem;}
+
+/* 라인 스타일 배지 */
+.badge.line-gray {border:1px solid var(--color-border-label-gray); color:var(--color-text-label-gray);}
+.badge.line-green {border:1px solid var(--color-border-label-green); color:var(--color-text-label-green);}
+.badge.line-blue {border:1px solid var(--color-border-label-blue); color:var(--color-text-label-blue);}
+.badge.line-red {border:1px solid var(--color-border-label-red); color:var(--color-text-label-red);}
+.badge.line-orange {border:1px solid var(--color-border-label-orange); color:var(--color-text-label-orange);}
+.badge.line-yellow {border:1px solid var(--color-border-label-yellow); color:var(--color-text-label-yellow);}
+.badge.line-lightblue {border:1px solid var(--color-border-label-lightblue); color:var(--color-text-label-lightblue);}
+.badge.line-skyblue {border:1px solid var(--color-border-label-skyblue); color:var(--color-text-label-skyblue);}
+.badge.line-cobalt {border:1px solid var(--color-border-label-cobalt); color:var(--color-text-label-cobalt);}
+
+/* 채우기 스타일 배지 */
+.badge.fill-gray {background-color: var(--color-gray-100); color:var(--color-text-font-1);}
+.badge.fill-green {background-color: var(--color-green-500); color:var(--color-text-font-10);}
+.badge.fill-red {background-color: var(--color-red-500); color:var(--color-text-font-10);}
+.badge.fill-yellow {background-color: var(--color-yellow-500); color:var(--color-text-font-1);}
+.badge.fill-skyblue {background-color: var(--color-skyblue-500); color:var(--color-text-font-10);}
+
+/* 등급별 배지 */
+.badge.-grade1 {border:1px solid var(--color-border-label-red); background-color:transparent; color: var(--color-text-label-red);}
+.badge.-grade2 {border:1px solid var(--color-border-label-orange); background-color:transparent; color: var(--color-text-label-orange);}
+.badge.-grade3 {border:1px solid var(--color-border-label-yellow); background-color:transparent; color: var(--color-text-label-yellow);}
+.badge.-grade4 {border:1px solid var(--color-border-label-lightblue); background-color:transparent; color: var(--color-text-label-lightblue);}
+.badge.-grade5 {border:1px solid var(--color-border-label-skyblue);background-color:transparent; color: var(--color-text-label-skyblue);}
+.badge.-grade6 {border:1px solid var(--color-border-label-navy); background-color:transparent; color:var(--color-text-label-navy);}
+
+/* 특별 배지 */
+.badge.-kor {border-color:1px solid var(--color-border-label-green); color:var(--color-text-label-green); background:none;}
+.badge.-eng {border-color:1px solid var(--color-border-label-skyblue); color:var(--color-text-label-skyblue); background:none;}
+.badge.-smart {border:1px solid var(--S15); background-color:transparent; color:var(--S15);}
+.badge.-colorpick {border:1px solid var(--colorpick); background-color:transparent; color:var(--colorpick);}
+.badge.-colorpick-bg {background-color:var(--bg); color:var(--txt);}
+
+/* 카운트 배지 */
+.badge.-count {font-size: 1.1rem; height: 1.8rem; width: 1.8rem; background: var(--color-red-300); border-radius: var(--border-radius-circle); color: var(--color-text-font-10); position: absolute; display: flex; align-items: center; justify-content: center;}
+
+/* 뉴 배지 */
+.badge.-new {border-radius: var(--border-radius-circle); background: var(--color-bg-badge-red); width: .4rem; height: .4rem; display: flex; padding: var(--spacing-2); min-height: var(--spacing-4); line-height: 1;}
+
+/* 스크린리더 전용 스타일 */
+.hide {overflow:hidden !important; position:absolute !important; width:1px !important; height:1px !important; margin:0 !important; padding:0 !important; border:0 !important; white-space:nowrap !important; clip:rect(1px, 1px, 1px, 1px) !important; clip-path:inset(50%) !important;} 

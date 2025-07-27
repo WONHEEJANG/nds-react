@@ -1,0 +1,106 @@
+/* Infobox Component Styles */
+/* Extracted from common-ui.css */
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box {display: block; padding: var(--spacing-20); border: 1px solid var(--color-border-line-2); border-radius: var(--border-radius-16); background-color: var(--color-bg-default);}
+
+.box.-sm {padding: var(--spacing-16);}
+
+.box.-xs {padding: var(--spacing-12);}
+
+.box.-active {border-color: var(--color-border-point); background-color: var(--color-bg-point-light);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box .title {margin: 0 0 var(--spacing-8) 0; color: var(--color-text-font-1); font-size: 1.6rem; font-weight: 600; line-height: 1.4;}
+
+.box.-sm .title {font-size: 1.4rem; margin-bottom: var(--spacing-4);}
+
+.box.-xs .title {font-size: 1.3rem; margin-bottom: var(--spacing-4);}
+
+.box h3.title {font-size: 1.6rem; font-weight: 600;}
+
+.box h4.title {font-size: 1.4rem; font-weight: 500;}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box .p {margin: 0; color: var(--color-text-font-2); font-size: 1.4rem; line-height: 1.5;}
+
+.box.-sm .p {font-size: 1.3rem;}
+
+.box.-xs .p {font-size: 1.2rem;}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box .delete-button {position: absolute; top: var(--spacing-12); right: var(--spacing-12); width: 2.4rem; height: 2.4rem; border: none; background: none; cursor: pointer; padding: var(--spacing-4); border-radius: var(--border-radius-4); color: var(--color-text-font-3); font-size: 1.4rem; transition: background-color 0.2s ease, color 0.2s ease;}
+
+.box .delete-button:hover {background-color: var(--color-bg-hover); color: var(--color-text-font-1);}
+
+.box .delete-button:active {background-color: var(--color-bg-active);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box:hover {border-color: var(--color-border-line-1); transition: border-color 0.2s ease;}
+
+.box.-active:hover {border-color: var(--color-border-point);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box[style*="cursor: pointer"]:hover {background-color: var(--color-bg-hover);}
+
+.box[style*="cursor: pointer"]:active {background-color: var(--color-bg-active);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box.-disabled {opacity: 0.5; cursor: not-allowed;}
+
+.box.-disabled:hover {border-color: var(--color-border-line-2); background-color: var(--color-bg-default);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box.-error {border-color: var(--color-border-error); background-color: var(--color-bg-error-light);}
+
+.box.-error .title {color: var(--color-text-error);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box.-success {border-color: var(--color-border-success); background-color: var(--color-bg-success-light);}
+
+.box.-success .title {color: var(--color-text-success);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box.-warning {border-color: var(--color-border-warning); background-color: var(--color-bg-warning-light);}
+
+.box.-warning .title {color: var(--color-text-warning);}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.box.-info {border-color: var(--color-border-info); background-color: var(--color-bg-info-light);}
+
+.box.-info .title {color: var(--color-text-info);}
+
+/* ?∏Ìè¨Î∞ïÏä§ Í∑∏Î£π */
+.box + .box {margin-top: var(--spacing-12);}
+
+.box-group {display: flex; flex-direction: column; gap: var(--spacing-12);}
+
+.box-group.-horizontal {flex-direction: row;}
+
+.box-group.-horizontal .box {flex: 1;}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+@media (max-width: 768px) {
+  .box {padding: var(--spacing-16);}
+  
+  .box.-sm {padding: var(--spacing-12);}
+  
+  .box.-xs {padding: var(--spacing-8);}
+  
+  .box .title {font-size: 1.5rem;}
+  
+  .box.-sm .title {font-size: 1.3rem;}
+  
+  .box.-xs .title {font-size: 1.2rem;}
+  
+  .box .p {font-size: 1.3rem;}
+  
+  .box.-sm .p {font-size: 1.2rem;}
+  
+  .box.-xs .p {font-size: 1.1rem;}
+  
+  .box-group.-horizontal {flex-direction: column;}
+}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.hide {overflow:hidden !important; position:absolute !important; width:1px !important; height:1px !important; margin:0 !important; padding:0 !important; border:0 !important; white-space:nowrap !important; clip:rect(1px, 1px, 1px, 1px) !important; clip-path:inset(50%) !important;} 

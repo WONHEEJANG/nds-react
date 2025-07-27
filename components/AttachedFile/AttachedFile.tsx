@@ -1,4 +1,5 @@
 import React from 'react';
+import './attached-file.css';
 
 export interface AttachedFileItem {
   id: string;

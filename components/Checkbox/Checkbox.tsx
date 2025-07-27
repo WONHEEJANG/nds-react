@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import './checkbox.css';
 
 export interface CheckboxProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: string;

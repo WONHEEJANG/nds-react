@@ -1,4 +1,5 @@
 import React from 'react';
+import './empty.css';
 
 export interface EmptyProps {
   /** Empty 컴포넌트 타입 */

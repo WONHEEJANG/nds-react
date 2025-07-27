@@ -1,4 +1,5 @@
 import React from 'react';
+import './bottomsheet.css';
 
 export interface BottomsheetButton {
   text: string;

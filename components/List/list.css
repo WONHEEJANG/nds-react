@@ -1,0 +1,102 @@
+/* List Component Styles */
+/* Extracted from common-ui.css */
+
+/* 리스??기본 ?��???*/
+.list {display:flex; flex-direction:column; gap:var(--spacing-8);}
+
+.list-item {display:flex; align-items:center; padding:var(--spacing-12) var(--spacing-16); border-radius:var(--border-radius-8); background-color:var(--color-bg-list-item-default); color:var(--color-text-list-item-default); font-size:1.4rem; font-weight:400; line-height:1.5; transition:background-color .3s;}
+
+.list-item:hover {background-color:var(--color-bg-list-item-hover);}
+
+.list-item:active {background-color:var(--color-bg-list-item-pressed);}
+
+/* 리스???�이???�태 */
+.list-item.-selected {background-color:var(--color-bg-list-item-selected); color:var(--color-text-list-item-selected);}
+
+.list-item.-disabled {background-color:var(--color-bg-list-item-disabled); color:var(--color-text-list-item-disabled); cursor:not-allowed;}
+
+/* 리스???�이???�기 */
+.list-item.-sm {padding:var(--spacing-8) var(--spacing-12); font-size:1.3rem;}
+.list-item.-lg {padding:var(--spacing-16) var(--spacing-20); font-size:1.6rem;}
+
+/* 리스???�이??변??*/
+.list-item.-outline {border:1px solid var(--color-border-list-item-outline); background-color:transparent;}
+
+.list-item.-outline:hover {background-color:var(--color-bg-list-item-outline-hover);}
+
+.list-item.-outline.-selected {background-color:var(--color-bg-list-item-outline-selected); border-color:var(--color-border-list-item-outline-selected);}
+
+/* 리스???�이???�용 */
+.list-item-content {display:flex; align-items:center; gap:var(--spacing-12); flex:1;}
+
+.list-item-icon {flex-shrink:0;}
+
+.list-item-text {flex:1;}
+
+.list-item-action {flex-shrink:0;}
+
+/* 리스???�이??구분??*/
+.list-item.-divider {border-bottom:1px solid var(--color-border-list-item-divider);}
+
+.list-item.-divider:last-child {border-bottom:none;}
+
+/* 리스???�이??체크박스 */
+.list-item.-checkbox {padding-left:var(--spacing-8);}
+
+.list-item.-checkbox .checkbox {margin-right:var(--spacing-12);}
+
+/* 리스???�이???�디??*/
+.list-item.-radio {padding-left:var(--spacing-8);}
+
+.list-item.-radio .radio {margin-right:var(--spacing-12);}
+
+/* 리스???�이???�위�?*/
+.list-item.-switch {padding-left:var(--spacing-8);}
+
+.list-item.-switch .switch {margin-left:auto;}
+
+/* 리스???�이???�바?� */
+.list-item.-avatar {padding-left:var(--spacing-8);}
+
+.list-item.-avatar .avatar {margin-right:var(--spacing-12);}
+
+/* 리스???�이???�네??*/
+.list-item.-thumbnail {padding-left:var(--spacing-8);}
+
+.list-item.-thumbnail .thumbnail {margin-right:var(--spacing-12);}
+
+/* 리스???�이??배�? */
+.list-item.-badge {padding-left:var(--spacing-8);}
+
+.list-item.-badge .badge {margin-left:auto;}
+
+/* 리스???�이??버튼 */
+.list-item.-button {cursor:pointer;}
+
+.list-item.-button:hover {background-color:var(--color-bg-list-item-button-hover);}
+
+.list-item.-button:active {background-color:var(--color-bg-list-item-button-pressed);}
+
+/* 리스???�이??링크 */
+.list-item.-link {cursor:pointer; text-decoration:none;}
+
+.list-item.-link:hover {background-color:var(--color-bg-list-item-link-hover);}
+
+.list-item.-link:active {background-color:var(--color-bg-list-item-link-pressed);}
+
+/* 리스???�이???�래�?*/
+.list-item.-draggable {cursor:grab;}
+
+.list-item.-draggable:active {cursor:grabbing;}
+
+/* 리스???�이???�롭�?*/
+.list-item.-dropzone {border:2px dashed var(--color-border-list-item-dropzone); background-color:var(--color-bg-list-item-dropzone);}
+
+.list-item.-dropzone.-active {border-color:var(--color-border-list-item-dropzone-active); background-color:var(--color-bg-list-item-dropzone-active);}
+
+/* 리스???�이??로딩 */
+.list-item.-loading {opacity:0.6; pointer-events:none;}
+
+.list-item.-loading::after {content:''; position:absolute; top:50%; left:50%; width:1.6rem; height:1.6rem; margin:-0.8rem 0 0 -0.8rem; border:2px solid var(--color-border-list-item-loading); border-top-color:transparent; border-radius:50%; animation:spin 1s linear infinite;}
+
+@keyframes spin {to {transform:rotate(360deg);}} 

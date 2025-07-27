@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './popup.css';
 
 export type PopupType = 'alert' | 'fullscreen' | 'layer';
 export type ButtonLayout = 'single' | 'half' | 'custom';

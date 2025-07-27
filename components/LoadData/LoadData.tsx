@@ -1,4 +1,5 @@
 import React from 'react';
+import './load-data.css';
 
 export type LoadDataVariant = 'basic' | 'highlight';
 

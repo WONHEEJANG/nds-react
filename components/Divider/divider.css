@@ -1,0 +1,24 @@
+/* Divider Component Styles */
+/* Extracted from common-ui.css */
+
+/* Íµ¨Î∂Ñ??Í∏∞Î≥∏ ?§Ì???*/
+.divider {width:100%; height:1px; background-color:var(--color-border-line-2); margin:var(--spacing-16) 0;}
+
+/* Íµ¨Î∂Ñ??Î≥Ä??*/
+.divider.-thin {height:1px; background-color:var(--color-border-line-1);}
+.divider.-thick {height:2px; background-color:var(--color-border-line-3);}
+.divider.-dashed {border-top:1px dashed var(--color-border-line-2); background-color:transparent;}
+
+/* Íµ¨Î∂Ñ??Í∞ÑÍ≤© */
+.divider.-tight {margin:var(--spacing-8) 0;}
+.divider.-loose {margin:var(--spacing-24) 0;}
+
+/* ¡÷ºÆ ºˆ¡§µ  */
+.divider.-vertical {width:1px; height:100%; margin:0 var(--spacing-16);}
+.divider.-vertical.-thin {width:1px;}
+.divider.-vertical.-thick {width:2px;}
+
+/* Íµ¨Î∂Ñ???âÏÉÅ */
+.divider.-light {background-color:var(--color-border-line-1);}
+.divider.-dark {background-color:var(--color-border-line-3);}
+.divider.-primary {background-color:var(--color-border-point);} 

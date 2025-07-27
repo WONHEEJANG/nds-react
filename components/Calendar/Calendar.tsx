@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './calendar.css';
 
 export type CalendarType = 'day' | 'period' | 'month' | 'year-month-day';
 export type CalendarViewMode = 'day' | 'month' | 'year';

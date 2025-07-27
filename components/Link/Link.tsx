@@ -1,4 +1,5 @@
 import React from 'react';
+import './link.css';
 
 export type LinkVariant = 'basic' | 'category' | 'divide' | 'horizontal' | 'mix' | 'vertical' | 'none-border';
 export type LinkStyle = 'default' | 'underline' | 'point';

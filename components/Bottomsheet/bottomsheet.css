@@ -1,0 +1,154 @@
+/* Bottomsheet Component Styles */
+/* Extracted from common-ui.css */
+@import '../../src/styles/variables.css';
+
+/* 바텀시트 기본 스타일 */
+.layer {visibility:hidden; opacity:0; position:fixed; bottom:0; left:0; z-index:2000; width:100%; max-height:calc(100% - 6.4rem); border-radius:2.4rem 2.4rem 0 0; background-color:var(--color-bg-default); transform:translate3d(0, 100%, 0); transition:visibility .4s, opacity .4s, transform .4s;}
+
+.layer.-active {visibility:visible; opacity:1; transform:translate3d(0, 0, 0); transition:transform .4s;}
+
+.layer .container {height:100%;}
+
+/* 바텀시트 헤더 */
+.layer .header .inner {display:flex; align-items:center; padding: 2.2rem var(--spacing-24) 1rem var(--spacing-24); padding-top:2rem; padding-bottom:1rem; justify-content:flex-start; text-align: left;}
+
+.layer .header .title {color:var(--color-text-font-1); font-weight: 600; font-size:2rem; text-align: left;}
+
+.layer .header .title.-expand {max-width:calc(100% - 11rem);}
+
+.layer .header .title > a {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+.layer .header .funcs {display:flex; align-items:center; margin-left:auto;}
+
+.layer .header .funcs:first-child {left:var(--spacing-24);}
+
+.layer .header .funcs:last-child {right:var(--spacing-24);}
+
+.layer .header .func + .func  {margin-left:1.6rem;}
+
+.layer .header.-handle {position:relative;}
+
+.layer .header.-handle:after {content:""; position:absolute; top:.8rem; left:50%; width:9rem; height:.4rem; border-radius:.4rem; background-color:#ccc; transform:translateX(-50%);}
+
+/* 바텀시트 내용 */
+.layer .contents {display:flex; flex-direction:column; justify-content:space-between; overflow-x:hidden; overflow-y:auto; height:100%; max-height:calc(100vh - 11rem); max-height:calc(100dvh - 11rem);}
+
+.layer .contents.-mhMin{max-height:calc(100vh - 25rem) ;}
+
+.layer .contents > .segments {flex:1 0 auto; margin-bottom:0; padding:0 var(--spacing-24);}
+
+.layer .content {flex:1; padding: var(--spacing-12) var(--spacing-24) var(--spacing-32);}
+
+.layer .content.-wide {padding:0 0 2rem;}
+
+.layer .content.-full {padding:0;}
+
+.layer div.content.-full:nth-last-of-type(2) {padding-bottom:0;}
+
+.layer .header ~ .contents .content {padding-top:1.2rem;}
+
+.layer .contents > .segments ~ .content {overflow-x:hidden; overflow-y:auto; height:100%;}
+
+.layer .content.bttm {padding: var(--spacing-0) var(--spacing-24) var(--spacing-32);}
+
+.layer .content.bttm .h3 + .p {margin-top: 2.4rem;}
+
+.layer .content.slec-checked {padding-bottom: var(--spacing-16);}
+
+/* 바텀시트 스티커 */
+.layer .sticker {margin-top:auto; padding:0 var(--spacing-24) 3.2rem;}
+
+.layer .sticker .notice {border-top:none}
+
+.layer .sticker:not(.-wide) .notice {margin-bottom: var(--spacing-16);}
+
+.layer .content.sticker-layout {padding-bottom: var(--spacing-32);}
+
+/* 바텀시트 픽서 */
+.layer .fixer {position:absolute; bottom:0; left:0; width:100%; z-index:100; padding:0 var(--spacing-24) 3.2rem; background-color: var(--G10);}
+
+.layer .fixer[style*="block"] ~ .buffer,
+.layer .fixer:not(.dp-none):not([style*="none"]) ~ .buffer {height:88px !important}
+
+.layer .buffer {flex:1 0 auto;}
+
+/* 바텀시트 헤더 없음 */
+.layer .no-header .inner {padding: var(--spacing-20) var(--spacing-0);}
+
+/* 바텀시트 버튼 */
+.layer .fixer .buttons:not(.-half) {display:flex; flex-wrap:nowrap;}
+
+.layer .fixer .buttons:not(.-half) > .button:nth-child(1) {flex-basis:calc(34% - 0.6rem);}
+
+.layer .fixer .buttons:not(.-half) > .button:nth-child(2) {flex-basis:calc(66% - 0.6rem);}
+
+.layer .fixer .buttons:not(.-half) > .button:nth-child(1):nth-last-child(1) {flex-basis:calc(100% - 0.6rem);}
+
+.layer .fixer .buttons.-half .button.-tertiary.-rg {flex-basis: calc(50% - .9rem); margin: 0 .4rem .6rem;}
+
+/* 바텀시트 기능 버튼 */
+.layer .header .funcs .func {display:flex; align-items:center; justify-content:center; width:4.4rem; height:4.4rem; border:none; background:none; color:var(--color-text-font-1); cursor:pointer;}
+
+.layer .header .funcs .func.-close::before {content:""; width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/ico_close1_line_24.png) no-repeat center / 2.4rem;}
+
+.dark-mode .layer .header .funcs .func.-close::before {background:url(../src/imgs/nds/common/ico_close1_line_24_dk.png) no-repeat center / 2.4rem;}
+
+/* 바텀시트 다이얼로그 */
+.layer.dimWhiteLayer{box-shadow: 0 -0.3rem 0.6rem rgb(0 0 0 / 5%); border-radius: var(--border-radius-0);}
+
+.layer.dimWhiteLayer .choose-account-Wrap{margin-top: var(--spacing-0);}
+
+.layer.dimWhiteLayer .content{padding-top: var(--spacing-12);}
+
+.layer.dimWhiteLayer .content .custom-key-wrap{margin-top: var(--spacing-0);}
+
+.layer.dimWhiteLayer .content .amount-btn-wrap{margin-bottom: var(--spacing-16)}
+
+/* 바텀시트 내용 요소 */
+.layer .messages:last-child {padding-bottom:0;}
+
+.layer .content > .h3:first-child:last-child {margin-bottom:0;}
+
+.layer .selection ul {border-top:none; border-bottom:none;}
+
+.layer .field {margin-top: var(--spacing-32);}
+
+.layer .field:first-child {margin-top:0;}
+
+.layer .segments-panel .field:first-child{margin-top:0}
+
+.layer .content > .dl {margin-top:3rem;}
+
+.layer .content > .dl:first-child {margin-top:0;}
+
+.layer .content > .dls {margin-top:3rem;}
+
+.layer .content > .dls:first-child {margin-top:0;}
+
+.layer .content > .middle-tabs {margin-top:1.4rem;}
+
+.layer .content > .segments {margin-top:0;}
+
+.layer .content > .table:first-child {margin-top:1.4rem;}
+
+.layer .content > .dls:first-child {margin-top:1.4rem;}
+
+.layer .content > .data-list:first-child {margin-top:1.4rem;}
+
+.layer .content .segments.-tabstyle .item button {font-size: 1.6rem;}
+
+.layer .content .goto-button {margin-top:3.2rem}
+
+.layer .content .options {margin-top:-.8rem}
+
+/* 바텀시트 내의 리스트 */
+.layer .content > .dl > div:first-child dt,
+.layer .content > .dl > div:first-child dd {padding-top:0}
+
+.layer .content > .dl > div:last-child dt,
+.layer .content > .dl > div:last-child dd {padding-bottom:0}
+
+.layer .content > .dl.-lined {border-top:0;padding-top:0}
+
+/* 스크린리더 전용 스타일 */
+.hide {overflow:hidden !important; position:absolute !important; width:1px !important; height:1px !important; margin:0 !important; padding:0 !important; border:0 !important; white-space:nowrap !important; clip:rect(1px, 1px, 1px, 1px) !important; clip-path:inset(50%) !important;} 

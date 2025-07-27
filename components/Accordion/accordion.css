@@ -1,0 +1,91 @@
+/* Accordion Component Styles */
+/* Extracted from common-ui.css */
+@import '../../src/styles/variables.css';
+
+/* 아코디언 */
+.accordion.-borderless,
+.accordion.-borderless > .panel {border:none;}
+.accordion + .accordion {border-top:none;}
+.accordion > .title {display:flex; align-items:center; position:relative; width:100%; padding:1rem 3rem 1rem var(--indent); border:none; background-color:transparent; color:var(--color-text-font-1); font-weight:bold; font-size:1.5rem; text-align:left; transition:background-color .3s;transform:translate3d(0,0,0);}
+.accordion > .title:active {background-color:var(--bg1); transition:none;}
+.accordion > .title:before {content:""; position:absolute; top:50%; right:.4rem; width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/arr_down2_line_24.png) no-repeat 0 / cover; transform:translateY(-50%);}
+.dark-mode .accordion > .title:before {content:""; position:absolute; top:50%; right:.4rem; width:2.4rem; height:2.4rem; background:url(../src/imgs/nds/common/arr_down2_line_24_dk.png) no-repeat 0 / cover; transform:translateY(-50%);}
+.accordion > .title span:last-child {margin-left:auto;}
+.accordion.-slidedown .title:before {transform:translateY(-50%) rotate(180deg);}
+.accordion.-active .title:before {transform:translateY(-50%) rotate(180deg);}
+.accordion > .panel {padding:1rem var(--spacing-24) var(--spacing-24); color:var(--color-text-font-1); font-size:1.4rem;}
+
+/* 라인 변형 */
+.accordion.-line {border-top: 1px solid var(--color-border-line-2);}
+.accordion.-line > .title {padding: var(--spacing-20) var(--spacing-40) var(--spacing-20) var(--spacing-4); min-height: 6.4rem; font-size: 1.6rem;}
+.accordion.-line > .panel {padding: var(--spacing-24) var(--spacing-0);}
+
+/* 박스 변형 */
+.accordion.-card,
+.accordion.-box {border-radius: var(--border-radius-12); border:1px solid var(--color-border-line-2);}
+.accordion.-card + .accordion.-card,
+.accordion.-box + .accordion.-box,
+.accordion.-list + .accordion.-list {margin-top: var(--spacing-12);}
+.accordion.-card > .title,
+.accordion.-box > .title {min-height:6.4rem; padding: var(--spacing-20); padding-right: 5.6rem; font-weight: 600; font-size:1.6rem;}
+.accordion.-card > .panel {padding:var(--in); padding-top: 1rem; border-top: none;}
+.accordion.-card > .panel .iframe {width:calc(100% + (var(--indent) * 2) + (var(--in) * 2)); margin-right:calc(var(--out) - var(--indent)); margin-left:calc(var(--out) - var(--indent));}
+.accordion.-box > .title:before {right: 2.4rem;}
+.accordion.-card > .title:before, .accordion.-lg.-out > .title:before {right:2rem;}
+
+/* 그레이박스 변형 */
+.accordion.-graybox {background-color: var(--color-bg-container); border-radius: var(--border-radius-12);}
+.accordion.-graybox > .title {padding: var(--spacing-12) 4.8rem var(--spacing-12) var(--spacing-12); min-height: 4.8rem; color: var(--color-text-font-1); line-height: 2.2rem; font-size: 1.4rem; font-weight: 400;}
+.accordion.-graybox > .panel {padding: 0 var(--spacing-12) var(--spacing-16) var(--spacing-12); color: var(--color-text-font-1);}
+.accordion.-graybox > .title:before {right: 1.4rem;}
+.accordion.-graybox + .-graybox {margin-top: var(--spacing-12);}
+
+/* 리스트 변형 */
+.accordion.-list {border-radius: var(--border-radius-12); border:1px solid var(--color-border-line-2);}
+.accordion.-list > .title {min-height:6.4rem; padding: var(--spacing-20); padding-right: 5.6rem; font-weight: 600; font-size:1.6rem;}
+.accordion.-list > .title:before {right: 1.6rem;}
+.accordion > .panel > .dl > div dt,
+.accordion > .panel > .dl > div dd {padding: var(--spacing-8) var(--spacing-0) var(--spacing-8) var(--spacing-0);}
+.accordion.-list > .panel > .dl > div:first-of-type dt, 
+.accordion.-list > .panel > .dl > div:first-of-type dd {padding-top: var(--spacing-0);}
+.accordion.-list > .panel > .dl > div:last-of-type dt, 
+.accordion.-list > .panel > .dl > div:last-of-type dd {padding-bottom: var(--spacing-0);}
+
+/* 박스 + 리스트 조합 */
+.accordion.-box.-list > .title {flex-direction: column; align-items: flex-start; min-height: 9.2rem;}
+.accordion.-box.-list > .title::before {top: 3rem;}
+.accordion.-box.-list > .title .badges {margin-bottom: var(--spacing-8);}
+.accordion.-box.-list > .title .name {color: var(--color-text-font-1); font-size: 1.6rem; font-weight: 600; line-height: 150%;}
+.accordion.-box.-list > .title .sub-info {color: var(--color-text-font-3); font-size: 1.3rem; font-weight: 400; line-height: 153%; margin-left: var(--spacing-4);}
+
+/* 배지 스타일 */
+.badges {display:flex;}
+.badges.-left {justify-content:flex-start;}
+.badges.-center {justify-content:center;}
+.badges.-right {justify-content:flex-end;}
+.badges .badge + .badge,
+.badge + .badge {margin-left:.4rem;}
+
+.badge {display:inline-block; padding: .3rem var(--spacing-8) var(--spacing-2) var(--spacing-8); border-radius: var(--border-radius-4); background-color: transparent; color:#646873; font-size:1rem; font-weight: 400; border:1px solid transparent; line-height: 1.367; min-height: 2rem;}
+
+.badge.line-gray {border:1px solid var(--color-border-label-gray); color:var(--color-text-label-gray);}
+.badge.line-green {border:1px solid var(--color-border-label-green); color:var(--color-text-label-green);}
+.badge.line-blue {border:1px solid var(--color-border-label-blue); color:var(--color-text-label-blue);}
+.badge.line-red {border:1px solid var(--color-border-label-red); color:var(--color-text-label-red);}
+.badge.line-orange {border:1px solid var(--color-border-label-orange); color:var(--color-text-label-orange);}
+.badge.line-yellow {border:1px solid var(--color-border-label-yellow); color:var(--color-text-label-yellow);}
+.badge.line-lightblue {border:1px solid var(--color-border-label-lightblue); color:var(--color-text-label-lightblue);}
+.badge.line-skyblue {border:1px solid var(--color-border-label-skyblue); color:var(--color-text-label-skyblue);}
+.badge.line-cobalt {border:1px solid var(--color-border-label-cobalt); color:var(--color-text-label-cobalt);}
+
+.badge.fill-gray {background-color: var(--color-gray-100); color:var(--color-text-font-1);}
+.badge.fill-green {background-color: var(--color-green-500); color:var(--color-text-font-10);}
+.badge.fill-red {background-color: var(--color-red-500); color:var(--color-text-font-10);}
+.badge.fill-yellow {background-color: var(--color-yellow-500); color:var(--color-text-font-1);}
+.badge.fill-skyblue {background-color: var(--color-skyblue-500); color:var(--color-text-font-10);}
+
+/* 아코디언 관련 추가 스타일 */
+.data-list .accordion:last-child {border-bottom:none;}
+
+/* 다크모드 스타일 */
+.dark-mode .accordion > .title:before {background:url(../src/imgs/nds/common/arr_down2_line_24_dk.png) no-repeat 0 / cover;} 

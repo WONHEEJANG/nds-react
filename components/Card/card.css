@@ -1,0 +1,238 @@
+/* Card Component Styles */
+/* Extracted from common-ui.css */
+@import '../../src/styles/variables.css';
+
+/* 카드 기본 스타일 */
+.card {display:block; padding:var(--spacing-20); border:1px solid var(--color-border-line-2); border-radius:var(--border-radius-16); background-color:var(--color-bg-default);}
+
+/* 계좌 카드 */
+.account.card {padding: var(--spacing-24) var(--spacing-20);}
+
+.account.card .dl dt {color: var(--color-text-font-3);}
+
+.account.card .dl dd {color: var(--color-text-font-1);}
+
+.account.card .hr {margin: var(--spacing-20) var(--spacing-0);}
+
+.account.card {padding: var(--spacing-20);}
+
+.account.card .top-area.badges {margin-bottom: var(--spacing-4);}
+
+.account.card .bottom-area {margin-top: var(--spacing-12); color: var(--color-text-font-3); font-size: 1.3rem; font-weight: 500;}
+
+.account.card .bottom-area p > strong {color: var(--color-text-font-1);}
+
+.account.card .buttons {margin-top: var(--spacing-24);}
+
+.account.card .buttons.-triple {flex-wrap: initial;}
+
+.account.card .buttons.-triple .button {margin: var(--spacing-0) var(--spacing-2) .6rem;}
+
+.account.card .amount {display: flex; flex-direction: row; justify-content: flex-end; margin-top: var(--spacing-32); align-items: center;}
+
+.account.card .amount .key {color: var(--color-text-font-4); font-size: 1.4rem; font-weight: 400;}
+
+.account.card .amount .value {color: var(--color-text-font-1); font-size: 2rem; font-weight: 500; margin-left: var(--spacing-8);}
+
+.account.card .buttons + .info-box-error {margin-top: var(--spacing-16);}
+
+.account.card .info-box-error {background-color: var(--color-bg-container); border-radius: var(--border-radius-8); color: var(--color-text-error); padding: .7rem; text-align: center; min-height: 3.6rem; font-size: 1.3rem;}
+
+.account.card .del-btn {width:2.4rem; height:2.4rem; background: url(../src/imgs/nds/common/ico_cancle2_gray400_fill_24.png) center center / cover no-repeat ; position:absolute; right:1.6rem; top:50%; transform: translateY(-50%); border:none; cursor:pointer;}
+
+.account.card .del-btn.-fixed {top:2rem; right:2rem; transform: none;}
+
+.account.card.-comb .amount {flex-direction: column; align-items: flex-end;}
+
+.account.card .dl + .info {margin-top: var(--spacing-32);}
+
+.account.card .dl > div:last-of-type > dt,
+.account.card .dl > div:last-of-type > dd {padding-bottom: var(--spacing-0); width: 50%;}
+
+.-disabled .account.card{background-color:var(--color-bg-select-disabled) ;}
+
+.-readonly .account.card{background-color:var(--color-bg-select-readonly) ;}
+
+.account.card.-comb .buttons {margin-top: var(--spacing-16);}
+
+.account.card.-comb .buttons > .button {margin: var(--spacing-0) var(--spacing-4) .6rem; flex: 1;}
+
+.account.card.-comb .buttons > .button + .button {margin-left: var(--spacing-0);}
+
+.account.card.-comb .del-btn {top: 3rem; right: 2rem;}
+
+.account.card .insur-golf {width: 100%; height: auto; padding-right: 13rem;}
+
+.account.card .insur-golf::after {content: ""; background: url(../src/imgs/nds/common/img_nh-golf_58.png) no-repeat; width: 10rem; height: 5.8rem; position: absolute; top: 50%; right: 0; background-size: 10rem auto; transform: translateY(-50%);}
+
+.account.card.-comb .dot-menu {position: relative; width: 100%;}
+
+.account.card.-comb .dot-menu > .button {position: absolute; top: 0; right: 0;  width: 2.4rem; height: 2.4rem; border: 0; background: url(../src/imgs/nds/common/ico_admin-dot_line_24.png) no-repeat 100% / auto 2.4rem; cursor:pointer;}
+
+.dark-mode .account.card.-comb .dot-menu > .button {background: url(../src/imgs/nds/common/ico_admin-dot_line_24_dk.png) no-repeat 100% / auto 2.4rem;}
+
+.account.card.-comb .buttons > .button {margin: var(--spacing-0) var(--spacing-4) .6rem; flex: 1;}
+
+.account.card.-comb .buttons > .button + .button {margin-left: var(--spacing-0);}
+
+.account.card .insur-golf {width: 100%; height: auto; padding-right: 13rem;}
+
+.account.card .insur-golf::after {content: ""; background: url(../src/imgs/nds/common/img_nh-golf_58.png) no-repeat; width: 10rem; height: 5.8rem; position: absolute; top: 50%; right: 0; background-size: 10rem auto; transform: translateY(-50%);}
+
+.account.card.-comb .amount .value {position: relative;}
+
+.account.card.-comb .amount .value .-refresh {position: absolute; top: .2rem; left: -2.6rem;  width: 2.4rem; height: 2.4rem; border: 0; background: url(../src/imgs/nds/common/ico_refresh_line_24.png) no-repeat 100% / auto 2.4rem; cursor:pointer;}
+
+.dark-mode .account.card.-comb .amount .value .-refresh {background: url(../src/imgs/nds/common/ico_refresh_line_24_dk.png) no-repeat 100% / auto 2.4rem;}
+
+.account.card.selc-view {min-height: 8.6rem; display: flex; align-items: center;}
+
+.account.card.selc-view .account .name span {line-height: 150%;}
+
+.account.card.selc-view .account .account-number {line-height: 157%;}
+
+.account.card .accordion.bg-grey {margin-top: var(--spacing-24);}
+
+.account.card .input.-bordertype .mix .text .percent {right: .8rem;}
+
+.account.card .input.-bordertype .mix .text input[type="tel"]::placeholder {text-align: left;}
+
+.account.card.info .data-split {display: flex; justify-content: space-between;}
+
+.account.card.info .data-split .left-side .info-date {color: var(--color-text-font-3); font-size: 1.3rem; font-weight: 400; line-height: 153%; display: block;}
+
+.account.card.info .data-split .list-data-tit {color: var(--color-text-font-1); font-size: 1.5rem; font-weight: 500; line-height: 160%;}
+
+.account.card.info .data-split .list-data-sub span:first-of-type {color: var(--color-text-font-1); font-size: 1.6rem; font-weight: 600; line-height: 150%; margin-top: var(--spacing-4);}
+
+.account.card.info .data-split .list-data-sub span:last-of-type {color: var(--color-text-font-4); font-size: 1.4rem; font-weight: 400; line-height: 157%;}
+
+.account.card.info .data-split .right-side .list-data-sub span {text-align: right; margin-top: var(--spacing-4);}
+
+.account.card.info .data-split .right-side .list-data-sub span:first-of-type {margin-top: var(--spacing-0);}
+
+.account.card.info .data-split .list-data-sub span {display: block;}
+
+.account.card.info .data-split .left-side .list-data-sub span {color: var(--color-text-font-4); font-size: 1.4rem; font-weight: 400; line-height: 157%;}
+
+.account.card.info .data-split .left-side span ~ span {margin-top: var(--spacing-4);}
+
+.account.card.detail .-silver-won {padding-left: var(--spacing-40);}
+
+.account.card.detail .-silver-won::before {content: ''; position: absolute; top: 0; left: 0; background: url(../src/imgs/nds/common/ico_silver-won_fill_32.png) no-repeat center center; background-size: 3.2rem auto; width: 3.2rem; height: 3.2rem;}
+
+/* 선택 카드 */
+.selection.card .int-rate {padding: var(--spacing-20);}
+
+.selection.card .-bordered {border: 1px solid var(--color-border-line-2); border-radius: var(--border-radius-16); position: relative; width: 100%;}
+
+.selection.card .compare-checkbox {display: flex;justify-content: flex-end;align-items: center;position: absolute;top: 2rem;right: 2rem;transform: none;color: var(--color-text-font-3);font-size: 1.4rem; z-index: 1;}
+
+.selection.card .compare-checkbox .checkbox {margin-left: var(--spacing-8);}
+
+.selection.card .compare-checkbox .checkbox label {width: 2.4rem;height: 2.4rem;padding: 0;}
+
+.selection.card .int-rate.-bordered .top-area {width: 100%; margin-bottom: var(--spacing-4);}
+
+.selection.card .int-rate.-bordered .top-area .bank-name {font-size: 1.4rem;}
+
+.selection.card .int-rate.-bordered .top-area .badge {margin: var(--spacing-0) var(--spacing-4) var(--spacing-4) var(--spacing-0)}
+
+.selection.card .int-rate.-bordered .top-area .data-category {margin-right: .6rem; color: var(--color-text-font-1); font-size: 1.4rem; font-weight: 400;}
+
+.selection.card .int-rate.-bordered .data-info-main {font-size: 1.4rem; color: var(--color-text-font-4);}
+
+.selection.card .int-rate.-bordered .data-info-main .info-title {font-size: 1.6rem; color: var(--color-text-font-1); font-weight: 500; margin-top: var(--spacing-4);}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list {margin-top: .8rem;font-size: 1.4rem;font-weight: normal;color: var(--F05);}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list ul {display: flex;align-items: center;}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list ul li {position: relative;margin: var(--spacing-0) var(--spacing-12);}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list ul li:first-of-type {margin-left: var(--spacing-0);}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list ul li:last-of-type::before {border: 0;}
+
+.selection.card .int-rate.-bordered .data-info-main .info-list ul li::before {content: "";position: absolute;top: 50%;right: -1.2rem;transform: translateY(-50%);width: .1rem;height: 1.4rem;border: .1rem solid var(--color-border-line-2);}
+
+.selection.card .int-rate.-bordered .data-info-main li ~ li {margin-top: 0;}
+
+.selection.card .int-rate.-bordered .data-info-standard {margin-top: 3.2em;}
+
+.selection.card .int-rate.-bordered .standard-value {display: flex;flex-wrap: wrap;align-items: center;}
+
+.selection.card .int-rate.-bordered .standard-value .value-item {width: calc(100% / 3);padding-right: 1rem;}
+
+.selection.card .int-rate.-bordered .standard-value .value-item:last-child {padding-right: 0}
+
+.selection.card .int-rate.-bordered .standard-value .value-item .month-text {font-size: 1.5rem;color: var(--color-text-font-3);}
+
+.selection.card .int-rate.-bordered .standard-value .value-item > span {font-size: 1.8rem;font-weight: 500; color: var(--color-text-font-1);}
+
+.selection.card .int-rate.-bordered .accordion.-graybox,
+.selection.card .int-rate.-bordered .info-standard {margin-top: var(--spacing-24);}
+
+.selection.card .int-rate.-bordered .info-standard .standard-h {font-size: 1.5rem; color: var(--color-text-font-3); font-weight: 400;}
+
+.selection.card .int-rate.-bordered .info-standard .standard-price  span{font-weight: 600; margin-left: .8rem;}
+
+.selection.card .int-rate.-bordered .info-standard .standard-value{margin-top: var(--spacing-16);}
+
+.selection.card .int-rate.-bordered .info-standard.sep-four .standard-value .value-item {width: calc(100% / 4);}
+
+.selection.card .int-rate.-bordered .info-standard.sep-four .standard-value .value-item span {font-size: 1.5rem; color: var(--color-text-font-1); font-weight: 500;}
+
+.selection.card .int-rate.-bordered .info-sub p {margin-top: var(--spacing-12); color: var(--color-text-font-3); font-weight: 400; font-size: 1.4rem;}
+
+.selection.card .int-rate.-bordered .data-info-main .data-category {color: var(--color-text-font-1); font-size: 1.4rem; font-weight: 400; margin-top: var(--spacing-4);}
+
+.selection.card .int-rate.-bordered .data-hash {margin-top: var(--spacing-8);}
+
+.selection.card .int-rate.-bordered .data-hash span{color: var(--color-text-font-4); font-size: 1.4rem; font-weight: 400; margin-right: var(--spacing-8);}
+
+.selection.card .int-rate.-bordered .data-sub {margin-top: var(--spacing-20); display: flex; justify-content: flex-end; align-items: center;}
+
+.selection.card .int-rate.-bordered .data-sub .title {font-size: 1.4rem; color: var(--color-text-font-3); font-weight: 400;}
+
+.selection.card .int-rate.-bordered .data-sub .value {color: var(--color-text-font-1); font-size: 2rem; font-weight: 500; margin-left: var(--spacing-4);}
+
+/* 요약 카드 */
+.card.-sum {padding: var(--spacing-24);}
+
+.card.-sum .-box .top-data-area .badges + .title {margin-top: var(--spacing-8);}
+
+/* 카드 정보 */
+.card .info {display:flex; flex-direction:column; gap:var(--spacing-4);}
+
+.card .info .name {font-size:1.6rem; font-weight:600; color:var(--color-text-font-1);}
+
+.card .info .account-number {font-size:1.4rem; color:var(--color-text-font-3);}
+
+/* 카드 배지 */
+.card .badges {display:flex; gap:var(--spacing-4); margin-bottom:var(--spacing-8);}
+
+/* 카드 내의 리스트 */
+.card .dl {display:flex; flex-direction:column; gap:var(--spacing-8);}
+
+.card .dl > div {display:flex; justify-content:space-between; align-items:center;}
+
+.card .dl dt {font-size:1.4rem; color:var(--color-text-font-3);}
+
+.card .dl dd {font-size:1.4rem; color:var(--color-text-font-1); font-weight:500;}
+
+/* 카드 크기/위치 */
+.card .dls {position:relative;}
+
+.card .dls[data-role="fold"] {overflow:hidden;}
+
+.card .dls[data-role="fold"] .dl[data-role="hidden"] {display:none;}
+
+.card .dls .more {display:flex; align-items:center; justify-content:center; width:100%; padding:var(--spacing-12); border:none; background:none; color:var(--color-text-font-3); font-size:1.4rem; cursor:pointer;}
+
+.card .dls .more::after {content:""; width:1.6rem; height:1.6rem; margin-left:var(--spacing-4); background:url(../src/imgs/nds/common/arr_down1_line_16.png) no-repeat center / 1.6rem; transition:transform .3s;}
+
+.card .dls[data-role="fold"] .more::after {transform:rotate(180deg);}
+
+/* 스크린리더 전용 스타일 */
+.hide {overflow:hidden !important; position:absolute !important; width:1px !important; height:1px !important; margin:0 !important; padding:0 !important; border:0 !important; white-space:nowrap !important; clip:rect(1px, 1px, 1px, 1px) !important; clip-path:inset(50%) !important;} 

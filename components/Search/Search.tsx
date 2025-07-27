@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './search.css';
 
 export type SearchVariant = 'basic' | 'filter';
 export type SearchState = 'default' | 'focused' | 'filled' | 'error';

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import './popover.css';
 
 export type PopoverPosition = 'bc' | 'bl' | 'br' | 'tc' | 'tl' | 'tr';
 
@@ -36,7 +37,7 @@ export const Popover: React.FC<PopoverProps> = ({
 }) => {
   const [isVisible, setIsVisible] = useState(visible);
   const popoverRef = useRef<HTMLSpanElement>(null);
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
     setIsVisible(visible);
