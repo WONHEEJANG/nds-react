@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='UTF-8'>
+<link rel="stylesheet" href="assets/css/common-ui.css">
+<title>BottomSheet Part 23</title>
+</head>
+<body>
+<!-- Bottomsheet - option -->
+
+                            <button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-option')">테스트모드에서 클릭</button>
+                            <div class="nds__thumbnail"><img src="./prototype/NDS/images/1055_28823.png" alt=""></div>
+                            <div id="Bottomsheet-option" class="layer">
+                                <div class="container">
+                                    <div class="header">
+                                        <div class="inner">
+                                            <h1 class="title">조회 옵션 선택</h1>
+
+                                            <div class="funcs">
+                                                <button type="button" class="func -close" onClick="Layer.close('Bottomsheet-option')"><span class="hide">닫기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contents">
+                                        <div class="content">
+                                            <div class="field">
+                                                <p class="label">조회 설정</p>
+                                                <div class="box-radios -sm">
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="periods" id="period1" checked>
+                                                        <label for="period1">12개월</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="periods" id="period2">
+                                                        <label for="period2">24개월</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="periods" id="period3">
+                                                        <label for="period3">36개월</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="periods" id="period4">
+                                                        <label for="period4">직접입력</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mix datepicker">
+                                                    <div class="text" data-clear="false">
+                                                        <input type="text" class="left-side" id="date" value="2024.08.23" aria-haspopup="true" readonly>
+                                                    </div>
+                                                    <div class="space -lined date -start">
+                                                        <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+                                                    </div>
+                                                    <div class="dash">~</div>
+                                                    <div class="text" data-clear="false">
+                                                        <input type="text" class="left-side" id="date" value="2025.08.19" aria-haspopup="true" readonly>
+                                                    </div>
+                                                    <div class="space -lined date -end">
+                                                        <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <p class="label">조회기간</p>
+                                                <div class="box-radios -sm">
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="box-radios" id="box-radio1" checked>
+                                                        <label for="box-radio1">최신순</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="box-radios" id="box-radio2">
+                                                        <label for="box-radio2">과거순</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <p class="label">조회유형</p>
+                                                <div class="box-radios -sm">
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="box-radios2" id="box-radio3" checked>
+                                                        <label for="box-radio3">전체</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="box-radios2" id="box-radio4">
+                                                        <label for="box-radio4">입금</label>
+                                                    </div>
+                                                    <div class="box-radio">
+                                                        <input type="radio" name="box-radios2" id="box-radio5">
+                                                        <label for="box-radio5">출금</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fixer">
+                                            <div class="buttons">
+                                                <button type="button" class="button -lg -primary">다른계좌 등록하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+</body>
+</html>

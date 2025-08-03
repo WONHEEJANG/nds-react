@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='UTF-8'>
+<link rel="stylesheet" href="assets/css/common-ui.css">
+<title>BottomSheet Part 24</title>
+</head>
+<body>
+<!-- Bottomsheet - picker/calendar/month-day -->
+
+                            <button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_calendar_month-day')">테스트모드에서 클릭</button>
+                            <div class="nds__thumbnail"><img src="./prototype/NDS/images/1141_26567.png" alt=""></div>
+                            <div id="Bottomsheet-picker_calendar_month-day" class="layer">
+                                <div class="container">
+                                    <div class="header">
+                                        <div class="inner">
+                                            <h1 class="title">날짜 선택</h1>
+
+                                            <div class="funcs">
+                                                <button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_calendar_month-day')"><span class="hide">닫기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contents">
+                                        <div class="content">
+                                            <div class="calendar">
+                                                <div class="control">
+                                                    <button type="button" class="button -xs -fit">오늘</button>
+
+                                                    <div class="title">
+                                                        <button type="button" class="prev"><span class="hide">이전달</span></button>
+                                                        <span class="value">2024.10</span>
+                                                        <button type="button" class="next" disabled><span class="hide">다음달</span></button>
+                                                    </div>
+                                                </div>
+                                                
+</body>
+</html>

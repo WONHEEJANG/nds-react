@@ -1,1 +1,0 @@
-export { Search, type SearchProps, type SearchVariant, type SearchState } from './Search';

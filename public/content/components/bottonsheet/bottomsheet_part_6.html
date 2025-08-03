@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='UTF-8'>
+<link rel="stylesheet" href="assets/css/common-ui.css">
+<title>BottomSheet Part 6</title>
+</head>
+<body>
+<!-- Bottomsheet - account/other-no-data -->
+
+                            <button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_other-no-data')">테스트모드에서 클릭</button>
+                            <div class="nds__thumbnail"><img src="./prototype/NDS/images/3279_64860.png" alt=""></div>
+                            <div id="Bottomsheet-account_other-no-data" class="layer">
+                                <div class="container">
+                                    <div class="header">
+                                        <div class="inner">
+                                            <h1 class="title">계좌를 선택해 주세요</h1>
+
+                                            <div class="funcs">
+                                                <button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_other-no-data')"><span class="hide">닫기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contents">
+                                        <div class="content">
+                                            <div class="segments tab -bar">
+                                                <div class="outer">
+                                                    <div class="inner">
+                                                        <div role="tablist" class="list">
+                                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel3" id="segment3">NH농협</button></div>
+                                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel4" id="segment4">다른금융</button></div>
+                                                            <span class="switcher" aria-hidden="true"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="segments-panels">
+                                                <div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel" tabindex="0">
+                                                    
+                                                </div>
+                                                
+                                                <div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel -active" tabindex="0">
+                                                    <div class="choose-account-list">
+                                                        <p class="message">등록한 계좌가 없습니다<br>계좌를 등록하고 이용해 주세요</p>
+                                                    </div>
+                                                        
+                                                    <button type="button" class="goto-button">다른금융 계좌등록</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+</body>
+</html>

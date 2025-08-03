@@ -1,1 +1,0 @@
-export { Image, type ImageProps, type ImageSize, type ImageCategory } from './Image';

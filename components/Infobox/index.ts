@@ -1,1 +1,0 @@
-export { Infobox, type InfoboxProps, type InfoboxSize } from './Infobox';
